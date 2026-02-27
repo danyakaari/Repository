@@ -24,7 +24,6 @@ Route::get('/user/all/', [UserController::class, Controller::class, 'show']);
 //6
 Route::get('/user/{name}',[ArticleController::class, Controller::class, 'show']);
 //7
-Route::get('user/{surname}/{name}', [OkakController::class, 'show'])
-//8
+Route::get('user/{surname}/{name}', [OkakController::class, 'show']);
 
 ?>
