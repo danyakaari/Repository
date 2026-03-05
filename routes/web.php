@@ -4,6 +4,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\NaakiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,5 +26,6 @@ Route::get('/user/all/', [UserController::class, Controller::class, 'show']);
 Route::get('/user/{name}',[ArticleController::class, Controller::class, 'show']);
 //7
 Route::get('user/{surname}/{name}', [OkakController::class, 'show']);
-
+//8
+Route::get('/git/cnt', [NaakiController::class, 'show']);
 ?>
