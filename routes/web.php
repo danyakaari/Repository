@@ -26,5 +26,10 @@ Route::get('/git/cnt{surname}/{name}',  [NaakiController::class, 'show']);
 //3 
 Route::get('/git/cnt/{game}/{score}',  [BaxxController::class, 'show']); 
 //4
-Route::get('/git/title/slot', [Test4Controller::class, 'show'])
+Route::get('/git/title/slot',  [Test4Controller::class, 'show']);
+//5
+
+//6
+
+
 ?>

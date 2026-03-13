@@ -1,6 +1,6 @@
 <x-layout>
 	<x-slot:title>
-		heelololoelorelo
+		{{ $title }} - site.com
 	</x-slot>
 	hello world
 </x-layout>
