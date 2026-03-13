@@ -1,5 +1,6 @@
 <?php
-	class Test4Controller extends Controller
+	namespace App\Http\Controllers;
+	class test4Controller extends Controller
 	{
 		public function show()
 		{

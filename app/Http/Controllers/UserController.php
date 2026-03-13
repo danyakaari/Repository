@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 class UserController extends Controller
 {
-    public function show()
+    public function user()
     {
-        return 'Hello i am Danya';
+        return view('test4.user');
     }
+
 }
 ?>

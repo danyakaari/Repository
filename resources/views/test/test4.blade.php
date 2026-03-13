@@ -2,5 +2,6 @@
 	<x-slot:title>
 		{{ $title }} - site.com
 	</x-slot>
-	hello world
+	
+	{{ $text }} - hello world
 </x-layout>
