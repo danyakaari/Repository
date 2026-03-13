@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class NaakiController extends Controller
 {
-    public function show()
+    public function show($name,$surname)
     {
-      return view('void', ['slot'=>55]);  
+      return view('test2',['name' => $name, 'surname'=> $surname]);  
     }
     
 }

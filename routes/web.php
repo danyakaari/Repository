@@ -1,10 +1,13 @@
 <?php
 
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\NaakiController;
+use App\Http\Controllers\OkakController;
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\BaxxController;
+use App\Http\Controllers\Test4Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,15 +20,11 @@ use App\Http\Controllers\NaakiController;
 |
 */
 //1
-Route::get('/user', [UserController::class, 'show']);
+Route::get('/git', [OkakController::class, 'show']);
 //2
-Route::get('/user', [UserController::class, Controller::class, 'show']);
-//3
-Route::get('/user/all/', [UserController::class, Controller::class, 'show']);
-//6
-Route::get('/user/{name}',[ArticleController::class, Controller::class, 'show']);
-//7
-Route::get('user/{surname}/{name}', [OkakController::class, 'show']);
-//8
-Route::get('/git/cnt', [NaakiController::class, 'show']);
+Route::get('/git/cnt{surname}/{name}',  [NaakiController::class, 'show']);
+//3 
+Route::get('/git/cnt/{game}/{score}',  [BaxxController::class, 'show']); 
+//4
+Route::get('/git/title/slot', [Test4Controller::class, 'show'])
 ?>
