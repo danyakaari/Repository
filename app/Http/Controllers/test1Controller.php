@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class OkakController extends Controller
+class test1Controller extends Controller
 {
     public function show()
     {

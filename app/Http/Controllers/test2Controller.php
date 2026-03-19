@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class NaakiController extends Controller
+class test2Controller extends Controller
 {
     public function show($name,$surname)
     {

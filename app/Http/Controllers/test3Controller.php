@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class BaxxController extends Controller
+class test3Controller extends Controller
 {
     public function show($game, $score)
     {

@@ -9,5 +9,5 @@
 <section>
     My favorite {{ $game }} and my score {{ $score }}
     </section>
-</body>
+</body> 
 </html>
