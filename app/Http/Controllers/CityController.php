@@ -38,20 +38,31 @@ class CityController extends Controller
 
         return view('test.test4',['color' => $red]);
     }
-}
-//5 
-    public function   ()
-    {
-         $href
 
+//5 
+    public function text()
+    {
+        $text = 'сайт';
+        $href = 'http://prof.ru/';
+        
+        return view('test.test5', ['text' => $text,'href' => $href]);
     }
 //6
     public function time()
     {
-
         $var = 'var';
         
-        return view('test.test6',['var' => $var])
-
+        return view('test.test6',['var' => $var]);
     }
+//7
+    public function massive()
+    {
+
+    $massive = ['name' => 'Danil',
+                 'age' => '25',
+                'salary' => '1000'];
+
+    return view('test.test7', ['massive' => $massive]); 
+    }
+}
 ?>

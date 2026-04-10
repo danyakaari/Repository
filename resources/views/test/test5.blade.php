@@ -7,8 +7,7 @@
 </head>
 <body>
  
-<p class="{{ $text }}">link</p>
-<p class="{{ $href }}">http://prof.ru/</p>
+<a href="{{ $href }}">{{ $text }}</a>
 
 </body>
 </html>

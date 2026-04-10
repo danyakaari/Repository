@@ -24,7 +24,7 @@ use App\Http\Controllers\test8Controller;
 //lab-5
 
 //1
-	Route::get('/page',[CityController::class, 'index']);
+	Route::get('/git/index/hi',[CityController::class, 'index']);
 //2
     Route::get('/git/{color}',[CityController::class, 'css']);
 //3
@@ -32,7 +32,9 @@ use App\Http\Controllers\test8Controller;
 //4
     Route::get('/git/{color}',[CityController::class,'red']);
 //5
-    // Route::get('/git/{color}',[CityController::class,''])
+    Route::get('/git/href/text',[CityController::class,'text']);
 //6
     Route::get('/git/var',[CityController::class, 'var']);
+//7
+    Route::get('/git/massive', [CityController::class, 'massive']);
 ?> 

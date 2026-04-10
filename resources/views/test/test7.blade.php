@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
- 
-<p class = "{{ $var ? 'eee' : 'bbb' }}"> </p> 
-
+    <p>{{ $massive['name'] }}</p>
+    <p>{{ $massive['age'] }}</p>       
+    <p>{{ $massive['salary'] }}</p> 
 </body>
 </html>
