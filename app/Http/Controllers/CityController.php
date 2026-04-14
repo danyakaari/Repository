@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use PHPUnit\Framework\TestSize\TestSize;
+
 class CityController extends Controller
 //1
 {
@@ -30,7 +32,6 @@ class CityController extends Controller
         return view('test.test3', ['input1' => $input1, 'input2' => $input2, 'input3' => $input3]); 
         
     }
-
 //4
     public function red()
     {
@@ -63,6 +64,27 @@ class CityController extends Controller
                 'salary' => '1000'];
 
     return view('test.test7', ['massive' => $massive]); 
+    }
+//8 
+    public function numbers()
+    {
+        $numbers = ['1','2','3','4','5'];
+
+        return view ('test.test8',['numbers' => $numbers]);
+    }
+//9
+    public function city()    
+    {
+        $city = 'Омск';
+    
+        return view ('test.test9', ['city' => $city]);
+    }
+//10
+    public function location()
+    {
+        $location = ['country' => 'Россия', 'city' => 'Москва'];
+
+        return view('test.test10',['location' => $location]);
     }
 }
 ?>
