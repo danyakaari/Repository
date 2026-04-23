@@ -21,26 +21,8 @@ use App\Http\Controllers\test8Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//lab-5
+//lab-6
 
 //1
-	Route::get('/git/index/hi',[CityController::class, 'index']);
-//2
-    Route::get('/2/{color}',[CityController::class, 'css']);
-//3
-    Route::get('/git/input/okak',[CityController::class,'input']);
-//4
-    Route::get('/4/{color}',[CityController::class,'red']);
-//5
-    Route::get('/git/href/text',[CityController::class,'text']);
-//6
-    Route::get('/git/var',[CityController::class, 'var']);
-//7
-    Route::get('/git/massive', [CityController::class, 'massive']);
-//8
-    Route::get('/git/numbers',[CityController::class, 'numbers']);
-//9
-    Route::get('/git/city',[CityController::class, 'city']);
-//10
-    Route::get('/git/location',[CityController::class, 'location']);
+	Route::get('/practice6', [CityController::class, 'practice6']);
 ?>
