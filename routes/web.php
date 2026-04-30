@@ -21,8 +21,8 @@ use App\Http\Controllers\test8Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//lab-6
+//lab7
 
 //1
-	Route::get('/practice6', [CityController::class, 'practice6']);
+Route::get('/practice6', [CityController::class, 'practice6']);
 ?>

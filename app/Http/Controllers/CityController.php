@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use PHPUnit\Framework\TestSize\TestSize;
 
 class CityController extends Controller
-//lab6
+//lab7
 //1
 {
     public function practice6()
