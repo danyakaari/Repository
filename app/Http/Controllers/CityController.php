@@ -14,7 +14,7 @@ class CityController extends Controller
             ->map(fn($name) => strtoupper($name))
             ->reject(fn($name) => empty($name));
         
-        return view('test.practice6', ['names' => $names]);
+        return view('test.practice6', ['names' => $names]); 
     }
 }
 ?>
