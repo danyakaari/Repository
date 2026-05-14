@@ -12,12 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('posts_lab8', function (Blueprint $table) {
-            $table->id();                           
+            $table->id();
             $table->string('title');
-            $table->string('slug');     
-            $table->integer('likes');   
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');             
+            $table->string('slug');
+            $table->integer('likes');
+            $table->timestamps();  
         });
     }
 

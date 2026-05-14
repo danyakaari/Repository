@@ -1,16 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\test7Controller;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\CityController;
-use App\Http\Controllers\test2Controller;
-use App\Http\Controllers\test1Controller;
-use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\test3Controller;
-use App\Http\Controllers\test4Controller;
-use App\Http\Controllers\test8Controller;
-
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,8 +12,14 @@ use App\Http\Controllers\test8Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//lab7
+//lab11
 
 //1
-Route::get('/practice6', [CityController::class, 'practice6']);
+Route::get('/post/all', [PostController::class, 'getAll']);
+//2
+Route::get('/post/{id}', [PostController::class, 'getOne'])->where('id', '[0-9]+');
+//3 25.8
+Route::get('/post/all/{order?}',[PostController::class, 'getAll'])->where('order', 'id|title|date');
+//4 25.9
+Route::get('/post/all/{order?}/{dir?}', [PostController::class, 'getAll'])->where('order', 'id|title|date')->where('dir', 'asc|desc');
 ?>

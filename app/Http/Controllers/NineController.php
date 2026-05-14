@@ -10,7 +10,7 @@ class NineController extends Controller
     public function index()
     {
         //lab9
-        
+
         //1
         $users = DB::table('users')->get();
         dump($users);
@@ -18,7 +18,7 @@ class NineController extends Controller
         //2
         $users = DB::table('users')->get();
         foreach ($users as $user) {
-            dump($user);
+            dump($user);    
         }
 
         //3 PMA
