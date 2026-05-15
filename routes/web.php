@@ -9,6 +9,8 @@ use App\Http\Controllers\Lab20Controller;
 use App\Http\Controllers\Lab21Controller;
 use App\Http\Controllers\Lab22Controller;
 use App\Http\Controllers\Lab23Controller;
+use App\Http\Controllers\Lab24Controller;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,8 +22,9 @@ use App\Http\Controllers\Lab23Controller;
 |
 */
 
-//lab23
+//lab24
 
-Route::get('/task17_1', [Lab23Controller::class, 'task17_1']);
-Route::get('/task17_1/json', [Lab23Controller::class, 'task17_1_json']);
-Route::get('/task17_1/view', [Lab23Controller::class, 'task17_1_view']);
+Route::get('/task18_1', [Lab24Controller::class, 'task18_1']);
+Route::get('/task18_2', [Lab24Controller::class, 'task18_2']);
+Route::post('/task18_2', [Lab24Controller::class, 'task18_2_save']);
+Route::get('/task18_3', [Lab24Controller::class, 'task18_3']);
