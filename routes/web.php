@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\Lab18Controller;
+use App\Http\Controllers\Lab19Controller;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,18 +16,10 @@ use App\Http\Controllers\FormController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//lab18
+//lab19
 
-//12.1
-Route::get('/task12_1/form', [Lab18Controller::class, 'task12_1_form']);
-Route::post('/task12_1/result', [Lab18Controller::class, 'task12_1_result']);
-
-//12.2
-Route::get('/task12_2', [Lab18Controller::class, 'task12_2']);
-
-//2.3
-Route::match(['get', 'post'], '/task12_3', [Lab18Controller::class, 'task12_3']);
-
-//12.4
-Route::match(['get', 'post'], '/task12_4', [Lab18Controller::class, 'task12_4']);
+Route::match(['get', 'post'], '/task13_1', [Lab19Controller::class, 'task13_1']);
+Route::match(['get', 'post'], '/task13_2', [Lab19Controller::class, 'task13_2']);
+Route::match(['get', 'post'], '/task13_3/{param1}/{param2}', [Lab19Controller::class, 'task13_3']);
+Route::get('/test/method', [Lab19Controller::class, 'task13_4_8']);
 ?>
