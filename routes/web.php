@@ -8,6 +8,7 @@ use App\Http\Controllers\Lab19Controller;
 use App\Http\Controllers\Lab20Controller;
 use App\Http\Controllers\Lab21Controller;
 use App\Http\Controllers\Lab22Controller;
+use App\Http\Controllers\Lab23Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,15 +20,8 @@ use App\Http\Controllers\Lab22Controller;
 |
 */
 
-//lab22
+//lab23
 
-// 16.1
-Route::get('/task16_1/set', [Lab22Controller::class, 'task16_1_set']);
-Route::get('/task16_1/get', [Lab22Controller::class, 'task16_1_get']);
-
-// 16.2
-Route::match(['get', 'post'], '/task16_2/form', [Lab22Controller::class, 'task16_2_form']);
-Route::get('/task16_2/result', [Lab22Controller::class, 'task16_2_result']);
-
-// 16.3
-Route::match(['get', 'post'], '/task16_3', [Lab22Controller::class, 'task16_3']);
+Route::get('/task17_1', [Lab23Controller::class, 'task17_1']);
+Route::get('/task17_1/json', [Lab23Controller::class, 'task17_1_json']);
+Route::get('/task17_1/view', [Lab23Controller::class, 'task17_1_view']);
