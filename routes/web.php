@@ -7,6 +7,7 @@ use App\Http\Controllers\Lab18Controller;
 use App\Http\Controllers\Lab19Controller;
 use App\Http\Controllers\Lab20Controller;
 use App\Http\Controllers\Lab21Controller;
+use App\Http\Controllers\Lab22Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,19 +19,15 @@ use App\Http\Controllers\Lab21Controller;
 |
 */
 
-//lab21
-// 15.1
-Route::match(['get', 'post'], '/task15_1', [Lab21Controller::class, 'task15_1']);
-Route::get('/task15_1/success', [Lab21Controller::class, 'task15_1_success']);
+//lab22
 
-// 15.2
-Route::match(['get', 'post'], '/task15_2', [Lab21Controller::class, 'task15_2']);
-Route::get('/task15_2/success', [Lab21Controller::class, 'task15_2_success']);
+// 16.1
+Route::get('/task16_1/set', [Lab22Controller::class, 'task16_1_set']);
+Route::get('/task16_1/get', [Lab22Controller::class, 'task16_1_get']);
 
-// 15.3
-Route::get('/task15_3/old', [Lab21Controller::class, 'task15_3_old']);
-Route::get('/task15_3/new', [Lab21Controller::class, 'task15_3_new'])->name('new.page');
+// 16.2
+Route::match(['get', 'post'], '/task16_2/form', [Lab22Controller::class, 'task16_2_form']);
+Route::get('/task16_2/result', [Lab22Controller::class, 'task16_2_result']);
 
-// 15.4
-Route::get('/task15_4/redirect', [Lab21Controller::class, 'task15_4_redirect']);
-Route::get('/test/{param1}/{param2}', [Lab21Controller::class, 'task15_4_target'])->name('test.params');
+// 16.3
+Route::match(['get', 'post'], '/task16_3', [Lab22Controller::class, 'task16_3']);
