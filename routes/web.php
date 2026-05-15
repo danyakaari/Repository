@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\FormController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,11 +13,15 @@ use App\Http\Controllers\PostController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//lab12
+//lab17
 
-Route::get('/post/all/{order?}/{dir?}', [PostsController::class, 'getAll']);
-Route::get('/post/new', [PostsController::class, 'newPost']);
-Route::post('/post/new', [PostsController::class, 'newPost']);
-Route::match(['get', 'post'], '/post/edit/{id}', [PostsController::class, 'editPost']);
-Route::get('/post/rework', [PostsController::class, 'rework']);
+//11
+Route::match(['get', 'post'], '/task11', [FormController::class, 'task11']);
+//11.2
+Route::match(['get', 'post'], '/task11_2', [FormController::class, 'task11_2']);
+//11.3
+Route::match(['get', 'post'], '/task11_3', [FormController::class, 'task11_3']);
+//11.4
+Route::get('/task11_4/form', [FormController::class, 'task11_4_form']);
+Route::get('/task11_4/result', [FormController::class, 'task11_4_result']);
 ?>
