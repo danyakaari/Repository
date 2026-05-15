@@ -13,15 +13,18 @@ use App\Http\Controllers\FormController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//lab17
+//lab18
 
-//11
-Route::match(['get', 'post'], '/task11', [FormController::class, 'task11']);
-//11.2
-Route::match(['get', 'post'], '/task11_2', [FormController::class, 'task11_2']);
-//11.3
-Route::match(['get', 'post'], '/task11_3', [FormController::class, 'task11_3']);
-//11.4
-Route::get('/task11_4/form', [FormController::class, 'task11_4_form']);
-Route::get('/task11_4/result', [FormController::class, 'task11_4_result']);
+//12.1
+Route::get('/task12_1/form', [Lab18Controller::class, 'task12_1_form']);
+Route::post('/task12_1/result', [Lab18Controller::class, 'task12_1_result']);
+
+//12.2
+Route::get('/task12_2', [Lab18Controller::class, 'task12_2']);
+
+//2.3
+Route::match(['get', 'post'], '/task12_3', [Lab18Controller::class, 'task12_3']);
+
+//12.4
+Route::match(['get', 'post'], '/task12_4', [Lab18Controller::class, 'task12_4']);
 ?>
